@@ -9,7 +9,7 @@
 #include <QString>
 #include <ctime>
 #include <iostream>
-#include <question.h>
+#include <data/question.h>
 using namespace std;
 
 int main(int argc, char *argv[]) {
