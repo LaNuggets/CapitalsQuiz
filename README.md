@@ -10,10 +10,14 @@ For now this is a **Linux** application but still can works on windows i guess.
 
 ## initialization
 
-- You will need a c++ compiler such as g++ or clang++ ...
+- You will need a c++ compiler such as g++ or clang++ and Qt.
 
 ```
 sudo apt install g++
+```
+
+```
+sudo apt install qt5-default qtcreator
 ```
 
 - You need to run this **2** command in the src/ directorie :
