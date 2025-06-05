@@ -6,7 +6,7 @@ TEMPLATE = app
 TARGET = CapitalsQuiz.exe
 INCLUDEPATH += .
 
-QT += core gui widgets
+QT += core gui widgets network
 
 # You can make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
