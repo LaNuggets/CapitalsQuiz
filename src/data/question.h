@@ -4,9 +4,10 @@
 #include <string>
 #include <utility>
 #include <QString>
+#include <tuple>
 
 // Déclaration de la fonction
-std::pair<QString, QString> getInfo();
+std::tuple<QString, QString, QString> getInfo();
 
 
 #endif // QUESTION_H
