@@ -12,10 +12,11 @@ For now this is a **Linux** application but still can works on windows i guess.
 
 - You will need a c++ compiler such as g++ or clang++ and Qt.
 
+For g++
 ```
 sudo apt install g++
 ```
-
+For Qt
 ```
 sudo apt install qt5-default qtcreator
 ```

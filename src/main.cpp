@@ -50,7 +50,7 @@ int main(int argc, char *argv[]) {
     errorLabel->setStyleSheet("color: red;"); // Red error Msg
     countryButton->setStyleSheet("color: black;"); // Black text for country reveal button
     
-    // Layout vertical
+    // Layout
     QVBoxLayout *layout = new QVBoxLayout();
     layout->addWidget(flagLabel); // Flag
     layout->addWidget(countryButton); // Reveal button
@@ -60,12 +60,13 @@ int main(int argc, char *argv[]) {
     layout->addWidget(errorLabel); // Error Msg
     window.setLayout(layout);
 
-    // Flag download func
+    // Flag download
     QNetworkAccessManager* manager = new QNetworkAccessManager(&window);
     QNetworkRequest request{QUrl(flag)};
     QNetworkReply* reply = manager->get(request);
     QObject::connect(reply, &QNetworkReply::finished, [reply, flagLabel]() {
-        if (reply->error() == QNetworkReply::NoError) {
+      /// Check error during flag loading
+        if (reply->error() == QNetworkReply::NoError) { 
             QByteArray data = reply->readAll();
             QPixmap pix;
             pix.loadFromData(data);
