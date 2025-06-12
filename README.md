@@ -19,7 +19,6 @@ sudo apt install g++
 For Qt
 ```
 sudo apt install qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools qtcreator
-
 ```
 
 - You need to run this **2** command in the src/ directorie :
